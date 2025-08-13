@@ -26,7 +26,7 @@ function extractSubdomain(request: NextRequest): string | null {
   const rootDomainFormatted = rootDomain.split(':')[0];
 
   // Handle preview deployment URLs (tenant---branch-name.vercel.app)
-  if (hostname.includes('---') && hostname.endsWith('.vercel.app')) {
+  if (hostname.includes('---') && hostname.endsWith('.portify-kappa.vercel.app')) {
     const parts = hostname.split('---');
     return parts.length > 0 ? parts[0] : null;
   }
