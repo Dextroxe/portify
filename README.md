@@ -1,2 +1,2 @@
 # portify
-Your portfolio with some trickery
+Your portfolio with some trickery project
